@@ -72,9 +72,9 @@ function randomInArray( arr ) {
 function needReply() {
     var r = /<script\s+[^>]*>replyreload.*<\/script>/.test( document.documentElement.innerHTML );
     needReply = function () {
-        return r;
+        return 1;
     };
-    return r;
+    return 1;
 }
 
 /**
